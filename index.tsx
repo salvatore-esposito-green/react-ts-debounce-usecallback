@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import useDebounce from './hooks/useDebounce';
 
 export function App() {
+  console.clear();
+
   const [search, setSearch] = useState<string>('');
 
   function handleSearch(e: ChangeEvent<HTMLInputElement>): void {
